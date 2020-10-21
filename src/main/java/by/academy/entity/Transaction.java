@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "`transaction`")
+@Entity(name = "transaction")
 
 public class Transaction {
 
