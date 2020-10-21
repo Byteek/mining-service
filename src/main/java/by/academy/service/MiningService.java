@@ -43,6 +43,8 @@ public class MiningService {
 
         transaction.setCommission(0L);
 
+        logger.info("Find last block");
+
         if (blockRepository.findByOrderByTimeStampDesc().isEmpty()) {
             blockRepository.save(new Block("Im first block!", ""));
         }
