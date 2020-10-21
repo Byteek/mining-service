@@ -33,13 +33,15 @@ public class MiningService {
     @Transactional
     public boolean runMining(String usersWallet) {
         logger.info("RUN");
-
         logger.info("Wallet: {}", usersWallet);
-
         logger.info("Find transaction by stamp 0");
+
         Transaction transaction = transactionRepository.findFirstByStamp(0);
+
+        logger.info("Transaction by stamp 0: {}",transaction );
         logger.info("We calculate the commission");
 
+        transaction.setCommission(0L);
 
         if (blockRepository.findByOrderByTimeStampDesc().isEmpty()) {
             blockRepository.save(new Block("Im first block!", ""));
@@ -52,7 +54,6 @@ public class MiningService {
 
 
         transaction.setStamp(1);
-
         logger.info("Saving to database transaction with stamp: {}", transaction);
         transactionRepository.save(transaction);
 
