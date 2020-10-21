@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "`previousblock`")
 public class PreviousBlock {
 
     @Id

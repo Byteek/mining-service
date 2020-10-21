@@ -13,7 +13,8 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "`role`")
+
 public class Role {
     @Id
     @GeneratedValue(generator = "system-uuid")
