@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Instant;
+
 
 @RestController
 public class MiningController {
@@ -19,6 +21,12 @@ public class MiningController {
     @Autowired
     MiningService miningService;
 
+    @GetMapping("/time")
+    @ResponseStatus(HttpStatus.OK)
+    public String getCurrentTime() {
+
+        return Instant.now().toString();
+    }
 
     @PostMapping("/runMining")
     public ResponseEntity runMining(
