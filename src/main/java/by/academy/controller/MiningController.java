@@ -36,7 +36,7 @@ public class MiningController {
         if(miningService.runMining(appUser.getUsersWallet())){
             return new ResponseEntity(HttpStatus.OK);
         }else{
-            return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
     }
 }

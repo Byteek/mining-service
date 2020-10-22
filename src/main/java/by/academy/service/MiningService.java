@@ -2,7 +2,6 @@ package by.academy.service;
 
 import by.academy.entity.Block;
 import by.academy.entity.Transaction;
-import by.academy.entity.Wallet;
 import by.academy.repository.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,11 +36,11 @@ public class MiningService {
         logger.info("Find transaction by stamp 0");
 
         Transaction transaction = transactionRepository.findFirstByStamp(0);
-        if (transaction.equals(null)){
+        if (transaction == null) {
             logger.info("Transaction NULL");
             return false;
         }
-        logger.info("Transaction by stamp 0: {}",transaction );
+        logger.info("Transaction by stamp 0: {}", transaction);
         logger.info("We calculate the commission");
 
         transaction.setCommission(0L);
