@@ -37,7 +37,10 @@ public class MiningService {
         logger.info("Find transaction by stamp 0");
 
         Transaction transaction = transactionRepository.findFirstByStamp(0);
-
+        if (transaction.equals(null)){
+            logger.info("Transaction NULL");
+            return false;
+        }
         logger.info("Transaction by stamp 0: {}",transaction );
         logger.info("We calculate the commission");
 
