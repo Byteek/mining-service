@@ -12,7 +12,7 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "appuser")
+@Entity
 public final class AppUser {
     @Id
     @GeneratedValue(generator = "system-uuid")
