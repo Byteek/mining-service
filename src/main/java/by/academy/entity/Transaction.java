@@ -1,11 +1,9 @@
 package by.academy.entity;
 
-
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-
 
 @Data
 @AllArgsConstructor
