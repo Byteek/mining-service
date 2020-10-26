@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class MiningService {
@@ -35,9 +36,21 @@ public class MiningService {
         logger.info("Wallet: {}", usersWallet);
         logger.info("Find transaction by stamp 0");
 
-        Transaction transaction = transactionRepository.findFirstByStamp(0);
+        Transaction transaction;
+
+        transaction = transactionRepository.findFirstByStamp(0);
         if (transaction == null) {
             logger.info("Transaction NULL");
+            logger.info("Search all transaction by stamp 0");
+            List<Transaction> allByStamp = transactionRepository.findAllByStamp(0);
+            if(allByStamp.isEmpty()) {
+                logger.info("All transaction by stamp 0:{}", allByStamp);
+                return false;
+            }else {
+                Transaction transactionFromList = allByStamp.get(0);
+                logger.info("Transaction from list: {}", transactionFromList);
+                transaction = transactionFromList;
+            }
             return false;
         }
         logger.info("Transaction by stamp 0: {}", transaction);

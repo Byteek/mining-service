@@ -11,5 +11,5 @@ public interface TransactionRepository extends JpaRepository<Transaction, String
 
     Transaction findFirstByStamp(int i);
 
-    List<Transaction> findFirst5ByStamp(int i);
+    List<Transaction> findAllByStamp(int i);
 }
