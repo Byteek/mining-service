@@ -1,0 +1,15 @@
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\entity\Block.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\controller\MiningController.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\repository\PreviousBlockRepository.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\repository\UserRepository.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\entity\Role.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\repository\TransactionRepository.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\repository\WalletRepository.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\SampleSimpleApplication.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\repository\BlockRepository.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\entity\PreviousBlock.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\service\StringUtil.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\service\MiningService.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\entity\Wallet.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\entity\Transaction.java
+C:\Users\bytee\IdeaProjects\mining-service\src\main\java\by\academy\entity\AppUser.java

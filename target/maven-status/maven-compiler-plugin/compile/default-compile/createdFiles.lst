@@ -1,0 +1,16 @@
+by\academy\controller\MiningController.class
+by\academy\entity\Block$BlockBuilder.class
+by\academy\entity\PreviousBlock.class
+by\academy\entity\Block.class
+by\academy\repository\WalletRepository.class
+by\academy\entity\AppUser.class
+by\academy\repository\UserRepository.class
+by\academy\repository\TransactionRepository.class
+by\academy\service\StringUtil.class
+by\academy\entity\Role.class
+by\academy\entity\Transaction.class
+by\academy\SampleSimpleApplication.class
+by\academy\service\MiningService.class
+by\academy\repository\BlockRepository.class
+by\academy\repository\PreviousBlockRepository.class
+by\academy\entity\Wallet.class
